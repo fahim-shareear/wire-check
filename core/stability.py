@@ -13,7 +13,7 @@ def run_stability_test(host="8.8.8.8", duration=30, interval=1):
     duration : how long to run the test in seconds (default 30s)
     interval : time between pings in seconds (default 1s)
     """
-    print(f"\nRunning stability test for {duration} seconds...")
+    # print(f"\nRunning stability test for {duration} seconds...")
 
     latencies   = []
     errors      = 0
