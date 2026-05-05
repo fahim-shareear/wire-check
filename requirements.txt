@@ -1,0 +1,4 @@
+speedtest_cli
+requests
+ping3
+rich
