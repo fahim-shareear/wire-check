@@ -1,4 +1,7 @@
-speedtest_cli
+speedtest-cli
 requests
 ping3
 rich
+PyQt6
+flask
+flask-cors

@@ -1,0 +1,295 @@
+/* ── Global ────────────────────────────────────────────────── */
+* {
+    font-family: "Fira Code", "DejaVu Sans Mono", "Ubuntu Mono", monospace;
+    font-size: 13px;
+    color: #CCCFE0;
+}
+
+QMainWindow, QWidget {
+    background-color: #0B0E14;
+}
+
+/* ── Labels ─────────────────────────────────────────────────── */
+QLabel {
+    color: #CCCFE0;
+    background-color: transparent;
+}
+
+QLabel#title_label {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00D4FF;
+    letter-spacing: 4px;
+}
+
+QLabel#subtitle_label {
+    font-size: 11px;
+    color: #4A5568;
+    letter-spacing: 2px;
+}
+
+QLabel#section_title {
+    font-size: 11px;
+    font-weight: bold;
+    color: #5DADE2;
+    letter-spacing: 2px;
+    padding: 4px 0px;
+}
+
+QLabel#metric_key {
+    font-size: 11px;
+    color: #4A5568;
+    letter-spacing: 1px;
+}
+
+QLabel#metric_value {
+    font-size: 12px;
+    font-weight: bold;
+    color: #CCCFE0;
+}
+
+QLabel#speed_value {
+    font-size: 36px;
+    font-weight: bold;
+    color: #00D4FF;
+    letter-spacing: 2px;
+}
+
+QLabel#speed_unit {
+    font-size: 12px;
+    color: #4A5568;
+    letter-spacing: 1px;
+}
+
+QLabel#ping_value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #A57FDB;
+    letter-spacing: 2px;
+}
+
+QLabel#score_value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFD866;
+    letter-spacing: 2px;
+}
+
+QLabel#isp_value {
+    font-size: 12px;
+    color: #5DADE2;
+    letter-spacing: 1px;
+}
+
+/* ── Quality Labels ──────────────────────────────────────────── */
+QLabel#quality_excellent {
+    color: #A9DC76;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+QLabel#quality_good {
+    color: #5DADE2;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+QLabel#quality_average {
+    color: #FFD866;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+QLabel#quality_poor {
+    color: #FF6188;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* ── Status Labels ───────────────────────────────────────────── */
+QLabel#status_idle {
+    font-size: 11px;
+    color: #4A5568;
+    letter-spacing: 1px;
+}
+
+QLabel#status_running {
+    font-size: 11px;
+    color: #FFD866;
+    letter-spacing: 1px;
+}
+
+QLabel#status_done {
+    font-size: 11px;
+    color: #A9DC76;
+    letter-spacing: 1px;
+}
+
+QLabel#status_error {
+    font-size: 11px;
+    color: #FF6188;
+    letter-spacing: 1px;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────── */
+QPushButton {
+    background-color: transparent;
+    color: #00D4FF;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid #00D4FF;
+    border-radius: 6px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    min-width: 120px;
+}
+
+QPushButton:hover {
+    background-color: #00D4FF;
+    color: #0B0E14;
+}
+
+QPushButton:pressed {
+    background-color: #0099BB;
+    border-color: #0099BB;
+    color: #0B0E14;
+}
+
+QPushButton:disabled {
+    background-color: transparent;
+    border-color: #1E2535;
+    color: #1E2535;
+}
+
+QPushButton#stop_button {
+    border-color: #FF6188;
+    color: #FF6188;
+    min-width: 100px;
+}
+
+QPushButton#stop_button:hover {
+    background-color: #FF6188;
+    color: #0B0E14;
+}
+
+QPushButton#stop_button:disabled {
+    background-color: transparent;
+    border-color: #1E2535;
+    color: #1E2535;
+}
+
+/* ── Cards / Frames ──────────────────────────────────────────── */
+QFrame#card {
+    background-color: #111520;
+    border: 1px solid #1E2535;
+    border-radius: 10px;
+}
+
+QFrame#card_accent {
+    background-color: #111520;
+    border: 1px solid #5DADE2;
+    border-radius: 10px;
+}
+
+QFrame#card_purple {
+    background-color: #111520;
+    border: 1px solid #A57FDB;
+    border-radius: 10px;
+}
+
+QFrame#card_green {
+    background-color: #111520;
+    border: 1px solid #A9DC76;
+    border-radius: 10px;
+}
+
+QFrame#card_yellow {
+    background-color: #111520;
+    border: 1px solid #FFD866;
+    border-radius: 10px;
+}
+
+QFrame#header_frame {
+    background-color: #0B0E14;
+    border-bottom: 1px solid #1E2535;
+}
+
+QFrame#divider {
+    background-color: #1E2535;
+    max-height: 1px;
+    border: none;
+}
+
+/* ── Progress Bars ───────────────────────────────────────────── */
+QProgressBar {
+    background-color: #1E2535;
+    border: none;
+    border-radius: 3px;
+    max-height: 4px;
+    text-align: center;
+}
+
+QProgressBar#download_bar::chunk {
+    background-color: #00D4FF;
+    border-radius: 3px;
+}
+
+QProgressBar#upload_bar::chunk {
+    background-color: #A57FDB;
+    border-radius: 3px;
+}
+
+QProgressBar#ping_bar::chunk {
+    background-color: #A57FDB;
+    border-radius: 3px;
+}
+
+QProgressBar#stability_bar::chunk {
+    background-color: #FFD866;
+    border-radius: 3px;
+}
+
+QProgressBar#test_progress::chunk {
+    background-color: #00D4FF;
+    border-radius: 3px;
+}
+
+/* ── Scroll Area ─────────────────────────────────────────────── */
+QScrollArea {
+    border: none;
+    background-color: transparent;
+}
+
+QScrollBar:vertical {
+    background-color: #0B0E14;
+    width: 4px;
+    border-radius: 2px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #1E2535;
+    border-radius: 2px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #5DADE2;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* ── Tooltip ─────────────────────────────────────────────────── */
+QToolTip {
+    background-color: #111520;
+    color: #CCCFE0;
+    border: 1px solid #5DADE2;
+    border-radius: 4px;
+    padding: 6px 10px;
+    letter-spacing: 1px;
+}
